@@ -7,11 +7,12 @@ namespace _1048
     {
         static void Main(string[] args)
         {
-            double salario, novoSalario, ganho, percentual;
+            double salario, novoSalario, ganho;
+            int percentual;
 
-            salario = double.Parse(Console.ReadLine());
-
-            if (salario ==0 || salario < 400.00{
+            salario = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+                            
+            if (salario ==0 || salario < 400.00){
                 novoSalario = salario * 1.15;
                 ganho = novoSalario - salario;
                 percentual = 15;
@@ -24,7 +25,7 @@ namespace _1048
                 novoSalario = salario * 1.10;
                 ganho = novoSalario - salario;
                 percentual = 10;
-            } else if (salario >=1200.01 && salario <=2000.01) {
+            } else  {
                 novoSalario = salario * 1.07;
                 ganho = novoSalario - salario;
                 percentual = 7;
